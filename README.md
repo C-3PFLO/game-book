@@ -1,13 +1,11 @@
 # game-book
 
-## Running the Project
+Running the Project
 
 ```
 npm ci
 npm start
 ```
-
-## Contributing
 
 Enable the project hooks with
 
