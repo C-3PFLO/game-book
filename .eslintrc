@@ -1,0 +1,29 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest/globals": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "jest"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:jest/recommended",
+        "google"
+    ],
+    "rules": {
+        "indent": ["warn", 4],
+        "require-jsdoc": "warn",
+        "object-curly-spacing": ["warn", "always"],
+        "block-spacing": ["warn", "always"],
+        "max-len": ["warn", { "ignoreComments": true, "ignoreStrings": true }],
+        "comma-dangle": ["error", "only-multiline"],
+        "no-console": "warn",
+        "eol-last": ["error", "always"]
+    }
+}
