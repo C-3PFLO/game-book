@@ -1,0 +1,8 @@
+# built files
+dist/
+
+# config files that use old syntax
+*config.js
+
+# others
+assets/
