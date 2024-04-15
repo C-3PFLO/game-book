@@ -1,6 +1,12 @@
-import { sayHello } from './helloWorld';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-const helloComponent = document.createElement('div');
-helloComponent.innerHTML = sayHello('someone');
+const rootElement = document.createElement('div');
+document.body.appendChild(rootElement);
 
-document.body.appendChild(helloComponent);
+const reactRoot = ReactDOM.createRoot(rootElement);
+reactRoot.render(
+    <React.StrictMode>
+        Hello world!
+    </React.StrictMode>
+);

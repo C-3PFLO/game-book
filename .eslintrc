@@ -9,11 +9,13 @@
         "sourceType": "module"
     },
     "plugins": [
-        "jest"
+        "jest",
+        "react"
     ],
     "extends": [
         "eslint:recommended",
         "plugin:jest/recommended",
+        "plugin:react/recommended",
         "google"
     ],
     "rules": {
