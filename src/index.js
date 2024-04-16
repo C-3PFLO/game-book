@@ -1,6 +1,18 @@
-import { sayHello } from './helloWorld';
+// infrastructure
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-const helloComponent = document.createElement('div');
-helloComponent.innerHTML = sayHello('someone');
+// view components
+import { Story } from './view/Story';
 
-document.body.appendChild(helloComponent);
+// setup root element
+const rootElement = document.createElement('div');
+document.body.appendChild(rootElement);
+const reactRoot = ReactDOM.createRoot(rootElement);
+
+// render
+reactRoot.render(
+    <React.StrictMode>
+        <Story></Story>
+    </React.StrictMode>
+);

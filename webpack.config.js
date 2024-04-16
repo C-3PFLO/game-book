@@ -8,6 +8,22 @@ module.exports = {
         },
         compress: true,
     },
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/react']
+                        }
+                    }
+                ],
+            },
+        ],
+    },
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
