@@ -20,7 +20,7 @@
     ],
     "rules": {
         "indent": ["warn", 4],
-        "require-jsdoc": "warn",
+        "require-jsdoc": "off",
         "object-curly-spacing": ["warn", "always"],
         "block-spacing": ["warn", "always"],
         "max-len": ["warn", { "ignoreComments": true, "ignoreStrings": true }],
